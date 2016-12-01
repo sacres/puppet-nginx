@@ -52,7 +52,7 @@ class nginx (
   $sites_available_mode           = $::nginx::params::sites_available_mode,
   $super_user                     = $::nginx::params::super_user,
   $temp_dir                       = $::nginx::params::temp_dir,
-  $server_purge                   = false,
+  $server_purge                    = false,
 
   # Primary Templates
   $conf_template                  = 'nginx/conf.d/nginx.conf.erb',
@@ -154,8 +154,8 @@ class nginx (
   $nginx_mailhosts                = {},
   $nginx_streamhosts              = {},
   $nginx_upstreams                = {},
-  $nginx_servers                  = {},
-  $nginx_servers_defaults         = {},
+  $nginx_servers                   = {},
+  $nginx_servers_defaults          = {},
   ### END Hiera Lookups ###
 ) inherits ::nginx::params {
 

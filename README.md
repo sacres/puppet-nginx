@@ -199,7 +199,7 @@ to APT sources. For each virtual host you should specify which ruby should be us
 
 ```puppet
 nginx::resource::server { 'www.puppetlabs.com':
-  www_root          => '/var/www/www.puppetlabs.com',
+  www_root         => '/var/www/www.puppetlabs.com',
   server_cfg_append => {
     'passenger_enabled' => 'on',
     'passenger_ruby'    => '/usr/bin/ruby',
@@ -220,7 +220,7 @@ nginx::resource::server { 'puppet':
   ssl_cert             => '/var/lib/puppet/ssl/certs/example.com.pem',
   ssl_key              => '/var/lib/puppet/ssl/private_keys/example.com.pem',
   ssl_port             => 8140,
-  server_cfg_append    => {
+  server_cfg_append     => {
     'passenger_enabled'      => 'on',
     'passenger_ruby'         => '/usr/bin/ruby',
     'ssl_crl'                => '/var/lib/puppet/ssl/ca/ca_crl.pem',
