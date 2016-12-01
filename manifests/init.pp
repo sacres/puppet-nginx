@@ -154,8 +154,8 @@ class nginx (
   $nginx_mailhosts                = {},
   $nginx_streamhosts              = {},
   $nginx_upstreams                = {},
-  $nginx_servers                   = {},
-  $nginx_servers_defaults          = {},
+  $nginx_servers                  = {},
+  $nginx_servers_defaults         = {},
   ### END Hiera Lookups ###
 ) inherits ::nginx::params {
 

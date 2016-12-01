@@ -42,7 +42,7 @@ class nginx::config {
   $sites_available_mode           = $::nginx::sites_available_mode
   $super_user                     = $::nginx::super_user
   $temp_dir                       = $::nginx::temp_dir
-  $server_purge                    = $::nginx::server_purge
+  $server_purge                   = $::nginx::server_purge
   $accept_mutex                   = $::nginx::accept_mutex
   $accept_mutex_delay             = $::nginx::accept_mutex_delay
   $client_body_buffer_size        = $::nginx::client_body_buffer_size

@@ -284,7 +284,7 @@ define nginx::resource::location (
   }
   if ($location_satisfy != undef) {
     validate_re($location_satisfy, '^(any|all)$',
-    "${location_satisfy} is not supported for location_satisfy. Allowed values are 'any' and 'all'.")
+    "${$location_satisfy} is not supported for location_satisfy. Allowed values are 'any' and 'all'.")
   }
   if ($location_allow != undef) {
     validate_array($location_allow)
